@@ -1,1 +1,48 @@
-<!DOCTYPE html><html><body><h1>S2 Vocab</h1><p>Loading full page next.</p></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>S2 Vocabulary · Click to Hear</title>
+  <meta name="description" content="S2 English vocabulary with click-to-hear pronunciation, Chinese meanings and example sentences." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="hero">
+        <h1>S2 Vocabulary · 點擊聽讀音</h1>
+        <p class="sub">Click the word or the speaker to hear the pronunciation. You can also play the example sentences.</p>
+      </div>
+      <div class="controls">
+        <div class="units" id="units"></div>
+        <input class="search" id="search" type="search" placeholder="Search word / 搜尋單詞" />
+      </div>
+      <div class="toolbar">
+        <label class="hint">Accent
+          <select id="accent">
+            <option value="gb" selected>UK 英式</option>
+            <option value="us">US 美式</option>
+          </select>
+        </label>
+        <label class="hint">Speed
+          <select id="speed">
+            <option value="0.75">Slow</option>
+            <option value="1" selected>Normal</option>
+            <option value="0.9">Slightly slow</option>
+          </select>
+        </label>
+        <span class="hint">Tip: 先點任一喇叭，手機才會開聲。</span>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="grid" id="grid"></div>
+    <footer>
+      For S2 students · English + 繁體中文 · Tap a word to hear it.
+    </footer>
+  </main>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
